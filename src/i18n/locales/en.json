@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "partnership": "Partnership"
+  },
+  "header": {
+    "subtitle": "Expert-Level Genetic Diagnostics in Baku"
+  },
+  "home": {
+    "title": "GENESIS LAB",
+    "subtitle": "Expert-Level Genetic Diagnostics in Baku",
+    "description": "GENESIS LAB is a modern laboratory complex specializing in high-throughput Next Generation Sequencing (NGS) technology. We shorten the path from uncertainty to accurate diagnosis, providing clinicians with evidence-based information.",
+    "cta": "Learn More",
+    "seo": {
+      "keywords": "genetic diagnostics, NGS, GENESIS LAB, Baku, genetic testing, oncogenetics"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "why": {
+      "title": "Why GENESIS LAB?",
+      "items": {
+        "access": {
+          "title": "Direct Access",
+          "description": "We have created an advanced technology center in Baku to provide Azerbaijani doctors with direct access to world-class genetic tests. There is no longer a need to send biological materials abroad."
+        },
+        "technology": {
+          "title": "Technological Leadership",
+          "description": "Our laboratory is equipped with FastSeq 300, the most modern NGS sequencer. This device provides exceptional accuracy and high reading speed in DNA and RNA analysis."
+        },
+        "location": {
+          "title": "Fully Equipped Laboratory in Baku",
+          "description": "Performing analyses in Baku eliminates the risks of transporting biological materials and guarantees results in the shortest possible time."
+        },
+        "expertise": {
+          "title": "Professional Expertise",
+          "description": "Our team consists of certified medical geneticists and bioinformaticians. Each identified variant undergoes multi-level verification."
+        },
+        "support": {
+          "title": "360° Support System",
+          "description": "We provide full support at all stages, both for doctors (proper panel selection) and patients (post-analytical consultation)."
+        },
+        "reports": {
+          "title": "Expert Reports",
+          "description": "You receive not just a mutation list, but a clinical report that is clear to clinicians, enriched with practical recommendations."
+        }
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "oncogenetics": {
+      "title": "Oncogenetics: Precision Approach in Cancer Treatment",
+      "description": "Modern oncology cannot be imagined without molecular profiling. GENESIS LAB focuses on two main areas in oncogenetics:",
+      "types": {
+        "hereditary": {
+          "title": "Hereditary Oncological Syndromes",
+          "description": "Detection of germinal mutations (e.g., BRCA1/2, Lynch syndrome (MLH1, MSH2, etc.)) provides:",
+          "points": [
+            "Determination of the patient's lifetime individual cancer risk",
+            "Selection of radical prevention strategies for the patient and their relatives"
+          ]
+        },
+        "somatic": {
+          "title": "Somatic Tumor Profiling (Liquid and Tissue Biopsy)",
+          "description": "Analysis of mutations in tumor tissue through the FastSeq 300 sequencer:",
+          "points": [
+            "Targeted Therapy: Selection of drugs that block specific oncogene drivers (EGFR, ALK, ROS1, BRAF, etc.)",
+            "Resistance Assessment: Identification of tumor escape mechanisms from treatment",
+            "Minimal Residual Disease (MRD) Monitoring: Detection of relapse at the molecular level before clinical signs (CT/MRI)"
+          ]
+        }
+      }
+    },
+    "tests": {
+      "title": "Tests We Offer",
+      "description": "GENESIS LAB offers a wide range of genetic tests:",
+      "list": {
+        "diagnostic_panels": "Diagnostic panels",
+        "preimplantation": "Preimplantation genetic tests",
+        "screening": "Screening tests",
+        "nipt": "Non-invasive prenatal tests NIPT",
+        "exome": "Exome tests",
+        "mitochondrial": "Mitochondrial DNA tests",
+        "hla": "HLA analysis",
+        "custom_panels": "Custom designed panels"
+      },
+      "nipt": {
+        "title": "NIPT Tests",
+        "description": "Non-invasive prenatal tests (NIPT) - modern method to determine the genetic condition of the child from the pregnant woman's blood:",
+        "packages": {
+          "basic1": {
+            "title": "NIPT Basic 1",
+            "description": "Trisomy 21 and sex determination. (Suitable for twin pregnancies)."
+          },
+          "basic2": {
+            "title": "NIPT Basic 2",
+            "description": "Most common trisomies (21, 18, 13) and sex determination. (Suitable for twin pregnancies)."
+          },
+          "standard": {
+            "title": "NIPT Standard",
+            "description": "Trisomies + 6 sex chromosome aneuploidies + 19 other autosomal aneuploidies."
+          },
+          "plus": {
+            "title": "NIPT Plus",
+            "description": "Standard package + 60 microdeletion and duplication syndromes."
+          },
+          "pro": {
+            "title": "NIPT Pro",
+            "description": "Maximum control! Standard package + 90 microdeletions (including DiGeorge syndrome)."
+          }
+        }
+      }
+    },
+    "technical": {
+      "title": "Technical Advantages and Standards",
+      "table": {
+        "feature": {
+          "fastseq": "FastSeq 300 Sequencing",
+          "cnv": "CNV Analysis",
+          "mtdna": "mtDNA within WES",
+          "intronic": "Deep Intronic Variants"
+        },
+        "advantage": {
+          "fastseq": "High coverage",
+          "cnv": "Determination of gene copy number variants",
+          "mtdna": "Analysis of mitochondrial genome with 5% heteroplasmy",
+          "intronic": "Analysis of deep intron regions"
+        },
+        "clinical": {
+          "fastseq": "Detection of mosaicism and rare tumor clones",
+          "cnv": "Search for large deletions and duplications missed by conventional PCR",
+          "mtdna": "Diagnosis of multisystem mitochondrial pathologies",
+          "intronic": "Detection of hidden mutations that disrupt splicing"
+        }
+      }
+    }
+  },
+  "partnership": {
+    "title": "Partnership with Doctors",
+    "description": "GENESIS LAB is not just a laboratory, it is your intellectual partner. We offer:",
+    "points": [
+      "Consultative assistance in interpreting complex clinical cases",
+      "Fast results: Thanks to our local base and the power of FastSeq 300, waiting time is minimized",
+      "International Standards: Complete classification of variants according to ACMG/AMP criteria"
+    ],
+    "tagline": "GENESIS LAB: Accurate code — correct decision.",
+    "location": "Baku, Azerbaijan 🇦🇿"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Baku, Azerbaijan",
+    "hours": {
+      "title": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "weekdays_hours": "09:00 - 18:00",
+      "saturday": "Saturday",
+      "saturday_hours": "10:00 - 16:00",
+      "sunday": "Sunday",
+      "sunday_hours": "Closed"
+    },
+    "description": "Modern laboratory complex specializing in high-throughput Next Generation Sequencing (NGS) technology.",
+    "tagline": "Accurate code — correct decision"
+  }
+}
+
