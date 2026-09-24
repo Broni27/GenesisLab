@@ -1,153 +1,133 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About the lab",
+    "analyses": "Tests",
+    "doctors": "For doctors",
+    "contact": "Contact",
+    "account": "Account",
     "services": "Services",
     "partnership": "Partnership"
   },
   "header": {
-    "subtitle": "Expert-Level Genetic Diagnostics in Baku"
+    "subtitle": "Expert genetic diagnostics in Baku"
   },
   "home": {
     "title": "GENESIS LAB",
-    "subtitle": "Expert-Level Genetic Diagnostics in Baku",
-    "description": "GENESIS LAB is a modern laboratory complex specializing in high-throughput Next Generation Sequencing (NGS) technology. We shorten the path from uncertainty to accurate diagnosis, providing clinicians with evidence-based information.",
-    "cta": "Learn More",
+    "subtitle": "Expert genetic diagnostics in Baku",
+    "description": "GENESIS LAB is a modern laboratory in Baku. We help patients understand which genetic tests they need, why they are done, and what results mean — locally, without sending samples abroad.",
+    "cta": "Learn more",
+    "ctaAnalyses": "Browse tests",
+    "ctaContact": "Contact us",
+    "categoriesTitle": "Where to start",
+    "categoriesSubtitle": "Popular areas explained in plain language",
+    "seeAll": "All tests",
+    "helpTitle": "Not sure which test you need?",
+    "helpText": "Tell us your situation — we will suggest where to start and how to prepare for sampling.",
     "seo": {
-      "keywords": "genetic diagnostics, NGS, GENESIS LAB, Baku, genetic testing, oncogenetics"
+      "keywords": "genetic tests, NGS, GENESIS LAB, Baku, NIPT, oncogenetics, price"
     }
   },
   "about": {
-    "title": "About Us",
+    "title": "About the lab",
     "why": {
       "title": "Why GENESIS LAB?",
       "items": {
         "access": {
-          "title": "Direct Access",
-          "description": "We have created an advanced technology center in Baku to provide Azerbaijani doctors with direct access to world-class genetic tests. There is no longer a need to send biological materials abroad."
+          "title": "Direct access",
+          "description": "An advanced centre in Baku so doctors and patients can access world-class genetic tests without sending samples abroad."
         },
         "technology": {
-          "title": "Technological Leadership",
-          "description": "Our laboratory is equipped with FastSeq 300, the most modern NGS sequencer. This device provides exceptional accuracy and high reading speed in DNA and RNA analysis."
+          "title": "Modern technology",
+          "description": "Equipped with FastSeq 300 — an NGS sequencer for accurate, high-throughput DNA and RNA analysis."
         },
         "location": {
-          "title": "Fully Equipped Laboratory in Baku",
-          "description": "Performing analyses in Baku eliminates the risks of transporting biological materials and guarantees results in the shortest possible time."
+          "title": "Lab in Baku",
+          "description": "Local testing reduces transport risk and shortens turnaround time."
         },
         "expertise": {
-          "title": "Professional Expertise",
-          "description": "Our team consists of certified medical geneticists and bioinformaticians. Each identified variant undergoes multi-level verification."
+          "title": "Expertise",
+          "description": "Certified geneticists and bioinformaticians. Every significant variant goes through multi-level review."
         },
         "support": {
-          "title": "360° Support System",
-          "description": "We provide full support at all stages, both for doctors (proper panel selection) and patients (post-analytical consultation)."
+          "title": "360° support",
+          "description": "We help choose the right test and explain results together with your doctor."
         },
         "reports": {
-          "title": "Expert Reports",
-          "description": "You receive not just a mutation list, but a clinical report that is clear to clinicians, enriched with practical recommendations."
+          "title": "Clear reports",
+          "description": "Not just a mutation list — a clinical report with practical recommendations for clinicians."
         }
       }
     }
   },
-  "services": {
-    "title": "Our Services",
-    "oncogenetics": {
-      "title": "Oncogenetics: Precision Approach in Cancer Treatment",
-      "description": "Modern oncology cannot be imagined without molecular profiling. GENESIS LAB focuses on two main areas in oncogenetics:",
-      "types": {
-        "hereditary": {
-          "title": "Hereditary Oncological Syndromes",
-          "description": "Detection of germinal mutations (e.g., BRCA1/2, Lynch syndrome (MLH1, MSH2, etc.)) provides:",
-          "points": [
-            "Determination of the patient's lifetime individual cancer risk",
-            "Selection of radical prevention strategies for the patient and their relatives"
-          ]
-        },
-        "somatic": {
-          "title": "Somatic Tumor Profiling (Liquid and Tissue Biopsy)",
-          "description": "Analysis of mutations in tumor tissue through the FastSeq 300 sequencer:",
-          "points": [
-            "Targeted Therapy: Selection of drugs that block specific oncogene drivers (EGFR, ALK, ROS1, BRAF, etc.)",
-            "Resistance Assessment: Identification of tumor escape mechanisms from treatment",
-            "Minimal Residual Disease (MRD) Monitoring: Detection of relapse at the molecular level before clinical signs (CT/MRI)"
-          ]
-        }
-      }
+  "analyses": {
+    "title": "Tests",
+    "subtitle": "A catalog of genetic tests with plain-language explanations, AZN prices, and what each test is for.",
+    "searchPlaceholder": "Search: NIPT, BRCA, HLA, exome…",
+    "clearSearch": "Clear",
+    "searchResults": "Found: {{count}}",
+    "noResults": "Nothing found. Try another word or pick a category.",
+    "popularCategories": "Popular areas",
+    "featuredTests": "Frequently chosen",
+    "allCategories": "All categories",
+    "allCategoriesHint": "Gynecology and andrology are combined under Reproductive health.",
+    "helpTitle": "Need help choosing?",
+    "helpText": "Message us — we can suggest which test is usually ordered in your situation and how to prepare.",
+    "helpCta": "Ask a question",
+    "testsCount": "{{count}} tests",
+    "priceOnRequest": "Price on request",
+    "turnaround": "Turnaround",
+    "backToCatalog": "Back to catalog",
+    "sortName": "By name",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "all": "All",
+    "whyTitle": "Why this test",
+    "sample": "Sample needed",
+    "method": "Method",
+    "whatIncluded": "What is included / genes",
+    "disclaimer": "Website information is educational and does not replace medical advice. Always discuss results with a specialist.",
+    "askCta": "Ask about this test",
+    "related": "Related tests"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Ask about tests, booking, or how to prepare for sampling.",
+    "formHint": "We will get back to you. For now the form is a local stub — backend comes later.",
+    "name": "Your name",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send",
+    "successTitle": "Thank you!",
+    "successText": "We received your message and will reply soon.",
+    "prefillAnalysis": "Hello! I would like more information about this test: {{name}}"
+  },
+  "doctors": {
+    "title": "For doctors",
+    "description": "GENESIS LAB partners with clinicians: local NGS, panel selection support, and ACMG/AMP-aligned reporting.",
+    "points": {
+      "0": "Support interpreting complex cases",
+      "1": "Faster turnaround thanks to the Baku lab and FastSeq 300",
+      "2": "Variant classification to international criteria"
     },
-    "tests": {
-      "title": "Tests We Offer",
-      "description": "GENESIS LAB offers a wide range of genetic tests:",
-      "list": {
-        "diagnostic_panels": "Diagnostic panels",
-        "preimplantation": "Preimplantation genetic tests",
-        "screening": "Screening tests",
-        "nipt": "Non-invasive prenatal tests NIPT",
-        "exome": "Exome tests",
-        "mitochondrial": "Mitochondrial DNA tests",
-        "hla": "HLA analysis",
-        "custom_panels": "Custom designed panels"
-      },
-      "nipt": {
-        "title": "NIPT Tests",
-        "description": "Non-invasive prenatal tests (NIPT) - modern method to determine the genetic condition of the child from the pregnant woman's blood:",
-        "packages": {
-          "basic1": {
-            "title": "NIPT Basic 1",
-            "description": "Trisomy 21 and sex determination. (Suitable for twin pregnancies)."
-          },
-          "basic2": {
-            "title": "NIPT Basic 2",
-            "description": "Most common trisomies (21, 18, 13) and sex determination. (Suitable for twin pregnancies)."
-          },
-          "standard": {
-            "title": "NIPT Standard",
-            "description": "Trisomies + 6 sex chromosome aneuploidies + 19 other autosomal aneuploidies."
-          },
-          "plus": {
-            "title": "NIPT Plus",
-            "description": "Standard package + 60 microdeletion and duplication syndromes."
-          },
-          "pro": {
-            "title": "NIPT Pro",
-            "description": "Maximum control! Standard package + 90 microdeletions (including DiGeorge syndrome)."
-          }
-        }
-      }
-    },
-    "technical": {
-      "title": "Technical Advantages and Standards",
-      "table": {
-        "feature": {
-          "fastseq": "FastSeq 300 Sequencing",
-          "cnv": "CNV Analysis",
-          "mtdna": "mtDNA within WES",
-          "intronic": "Deep Intronic Variants"
-        },
-        "advantage": {
-          "fastseq": "High coverage",
-          "cnv": "Determination of gene copy number variants",
-          "mtdna": "Analysis of mitochondrial genome with 5% heteroplasmy",
-          "intronic": "Analysis of deep intron regions"
-        },
-        "clinical": {
-          "fastseq": "Detection of mosaicism and rare tumor clones",
-          "cnv": "Search for large deletions and duplications missed by conventional PCR",
-          "mtdna": "Diagnosis of multisystem mitochondrial pathologies",
-          "intronic": "Detection of hidden mutations that disrupt splicing"
-        }
-      }
-    }
+    "catalogCta": "Test catalog",
+    "contactCta": "Contact",
+    "tagline": "Exact code — right decision."
+  },
+  "account": {
+    "title": "Personal account",
+    "subtitle": "Coming soon: results, orders and appointments will live here.",
+    "comingSoon": "Coming soon",
+    "featureResults": "View test results",
+    "featureOrders": "Order history",
+    "featureAppointments": "Book a sample collection",
+    "contactCta": "Contact us for now"
   },
   "partnership": {
-    "title": "Partnership with Doctors",
-    "description": "GENESIS LAB is not just a laboratory, it is your intellectual partner. We offer:",
-    "points": [
-      "Consultative assistance in interpreting complex clinical cases",
-      "Fast results: Thanks to our local base and the power of FastSeq 300, waiting time is minimized",
-      "International Standards: Complete classification of variants according to ACMG/AMP criteria"
-    ],
-    "tagline": "GENESIS LAB: Accurate code — correct decision.",
-    "location": "Baku, Azerbaijan 🇦🇿"
+    "title": "Partnership with doctors",
+    "description": "GENESIS LAB is more than a lab — it is your intellectual partner.",
+    "tagline": "GENESIS LAB: Exact code — right decision.",
+    "location": "Baku, Azerbaijan"
   },
   "footer": {
     "rights": "All rights reserved",
@@ -157,7 +137,7 @@
     "email": "Email",
     "location": "Baku, Azerbaijan",
     "hours": {
-      "title": "Working Hours",
+      "title": "Working hours",
       "weekdays": "Monday - Friday",
       "weekdays_hours": "09:00 - 18:00",
       "saturday": "Saturday",
@@ -165,8 +145,7 @@
       "sunday": "Sunday",
       "sunday_hours": "Closed"
     },
-    "description": "Modern laboratory complex specializing in high-throughput Next Generation Sequencing (NGS) technology.",
-    "tagline": "Accurate code — correct decision"
+    "description": "Genetic laboratory in Baku: a clear test catalog for patients and support for doctors.",
+    "tagline": "Exact code — right decision"
   }
 }
-

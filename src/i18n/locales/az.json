@@ -1,153 +1,133 @@
 {
   "nav": {
-    "home": "Əsas səhifə",
-    "about": "Haqqımızda",
+    "home": "Əsas",
+    "about": "Laboratoriya",
+    "analyses": "Analizlər",
+    "doctors": "Həkimlər üçün",
+    "contact": "Əlaqə",
+    "account": "Şəxsi kabinet",
     "services": "Xidmətlər",
     "partnership": "Tərəfdaşlıq"
   },
   "header": {
-    "subtitle": "Bakıda Ekspert Səviyyəli Genetik Diaqnostika"
+    "subtitle": "Bakıda ekspert genetik diaqnostika"
   },
   "home": {
     "title": "GENESIS LAB",
-    "subtitle": "Bakıda Ekspert Səviyyəli Genetik Diaqnostika",
-    "description": "GENESIS LAB — yüksək məhsuldarlıqlı Yeni Nəsil Sekvensiya (NGS) texnologiyası üzrə ixtisaslaşmış müasir laboratoriya kompleksidir. Biz qeyri-müəyyənlikdən dəqiq diaqnoza gedən yolu qısaldır, klinisistləri sübutlu təbabətə əsaslanan məlumatlarla təmin edirik.",
-    "cta": "Ətraflı məlumat",
+    "subtitle": "Bakıda ekspert genetik diaqnostika",
+    "description": "GENESIS LAB — Bakıda müasir laboratoriya. Pasiyentlərə hansı genetik analizlərin lazım olduğunu, nə üçün verildiyini və nəticələrin nə demək olduğunu anlamağa kömək edirik — nümunələri xaricə göndərmədən.",
+    "cta": "Ətraflı",
+    "ctaAnalyses": "Analizlərə bax",
+    "ctaContact": "Bizimlə əlaqə",
+    "categoriesTitle": "Haradan başlamaq",
+    "categoriesSubtitle": "Populyar istiqamətlər — sadə dildə",
+    "seeAll": "Bütün analizlər",
+    "helpTitle": "Hansı analizi seçəcəyinizi bilmirsiniz?",
+    "helpText": "Vəziyyətinizi yazın — haradan başlamağı və materiala necə hazırlaşmağı izah edərik.",
     "seo": {
-      "keywords": "genetik diaqnostika, NGS, GENESIS LAB, Bakı, genetik test, onkogenetika"
+      "keywords": "genetik analizlər, NGS, GENESIS LAB, Bakı, NIPT, onkogenetika, qiymət"
     }
   },
   "about": {
-    "title": "Haqqımızda",
+    "title": "Laboratoriya haqqında",
     "why": {
-      "title": "Niyə məhz GENESIS LAB?",
+      "title": "Niyə GENESIS LAB?",
       "items": {
         "access": {
-          "title": "Birbaşa Çıxış",
-          "description": "Biz Azərbaycan həkimlərinin dünya səviyyəli genetik testlərə birbaşa çıxışını təmin etmək üçün Bakıda qabaqcıl texnoloji mərkəz yaratdıq. Bioloji materialların xaricə göndərilməsinə artıq ehtiyac yoxdur."
+          "title": "Birbaşa giriş",
+          "description": "Bakıda müasir mərkəz: həkim və pasiyentlər dünya səviyyəli genetik testlərə biomaterialı xaricə göndərmədən çata bilir."
         },
         "technology": {
-          "title": "Texnoloji Liderlik",
-          "description": "Laboratoriyamız ən müasir NGS sekvenatoru olan FastSeq 300 ilə təchiz edilmişdir. Bu cihaz DNT və RNT analizlərində müstəsna dəqiqlik və yüksək oxuma sürəti təmin edir."
+          "title": "Müasir texnologiya",
+          "description": "Laboratoriya FastSeq 300 NGS sekvenseri ilə təchiz olunub — DNT və RNT analizi üçün dəqiq və sürətli oxuma."
         },
         "location": {
-          "title": "Bakıda Yerləşən Tam Təchizatlı Laboratoriya",
-          "description": "Analizlərin Bakıda aparılması bioloji materialın daşınma risklərini aradan qaldırır və nəticələrin maksimum qısa müddətdə əldə olunmasına zəmanət verir."
+          "title": "Bakıda laboratoriya",
+          "description": "Yerli analiz daşınma risklərini azaldır və nəticə müddətini qısaldır."
         },
         "expertise": {
-          "title": "Peşəkar Ekspertiza",
-          "description": "Komandamız sertifikatlaşdırılmış həkim-genetiklərdən və bioinformatiklərdən ibarətdir. Hər bir aşkarlanan variant çoxsəviyyəli verifikasiyadan keçir."
+          "title": "Peşəkarlıq",
+          "description": "Sertifikatlı genetiklər və bioinformatiklər. Hər əhəmiyyətli variant çoxsəviyyəli yoxlamadan keçir."
         },
         "support": {
-          "title": "360° Dəstək Sistemi",
-          "description": "Biz həm həkimlərə (düzgün panel seçimi), həm də pasiyentlərə (post-analitik məsləhət) bütün mərhələlərdə tam dəstək göstəririk."
+          "title": "360° dəstək",
+          "description": "Uyğun testi seçməyə və nəticəni həkiminizlə birlikdə izah etməyə kömək edirik."
         },
         "reports": {
-          "title": "Ekspert Hesabatları",
-          "description": "Siz sadəcə mutasiya siyahısı deyil, klinisist üçün aydın olan, praktik tövsiyələrlə zənginləşdirilmiş klinik hesabat əldə edirsiniz."
+          "title": "Anlaşılan hesabatlar",
+          "description": "Sadəcə mutasiya siyahısı deyil — həkim üçün praktiki tövsiyələrlə klinik hesabat."
         }
       }
     }
   },
-  "services": {
-    "title": "Xidmətlərimiz",
-    "oncogenetics": {
-      "title": "Onkogenetika: Xərçəngin Müalicəsində Precizion Yanaşma",
-      "description": "Müasir onkologiyanı molekulyar profilləmə olmadan təsəvvür etmək qeyri-mümkündür. GENESIS LAB onkogenetika sahəsində iki əsas istiqamətə fokuslanır:",
-      "types": {
-        "hereditary": {
-          "title": "İrsi Onkoloji Sindromlar",
-          "description": "Germinal mutasiyaların (məsələn, BRCA1/2, Lynch sindromu (MLH1, MSH2 və s.)) aşkarlanması aşağıdakıları təmin edir:",
-          "points": [
-            "Pasiyentin həyat boyu fərdi xərçəng riskinin müəyyən edilməsi",
-            "Pasiyent və onun qohumları üçün radikal profilaktika taktikalarının seçilməsi"
-          ]
-        },
-        "somatic": {
-          "title": "Şişin Somatik Profillənməsi (Maye və toxuma biopsiyası)",
-          "description": "FastSeq 300 sekvenatoru vasitəsilə şiş toxumasındakı mutasiyaların analizi:",
-          "points": [
-            "Hədəf (Target) Terapiya: Spesifik onkogen drayverləri (EGFR, ALK, ROS1, BRAF və s.) bloklayan preparatların seçilməsi",
-            "Rezistentliyin Qiymətləndirilməsi: Şişin müalicədən yayınma mexanizmlərinin müəyyən edilməsi",
-            "Minimal Qalıq Xəstəliyin (MRD) Monitorinqi: Residivin klinik əlamətlərdən (KT/MRT) daha öncə, molekulyar səviyyədə aşkarlanması"
-          ]
-        }
-      }
+  "analyses": {
+    "title": "Analizlər",
+    "subtitle": "Genetik müayinələrin kataloqu: sadə izah, manatla qiymət və pasiyent üçün nə üçün lazım olduğu.",
+    "searchPlaceholder": "Axtarış: NIPT, BRCA, HLA, ekzom…",
+    "clearSearch": "Təmizlə",
+    "searchResults": "Tapıldı: {{count}}",
+    "noResults": "Heç nə tapılmadı. Başqa söz yoxlayın və ya kateqoriya seçin.",
+    "popularCategories": "Populyar istiqamətlər",
+    "featuredTests": "Tez-tez seçilənlər",
+    "allCategories": "Bütün kateqoriyalar",
+    "allCategoriesHint": "Ginekologiya və andrologiya «Reproduktiv sağlamlıq» altında birləşdirilib.",
+    "helpTitle": "Seçimdə kömək lazımdır?",
+    "helpText": "Bizə yazın — vəziyyətinizdə adətən hansı analizin təyin olunduğunu və necə hazırlaşmağı izah edərik.",
+    "helpCta": "Sual verin",
+    "testsCount": "{{count}} analiz",
+    "priceOnRequest": "Qiymət sorğu ilə",
+    "turnaround": "Müddət",
+    "backToCatalog": "Kataloqa qayıt",
+    "sortName": "Ada görə",
+    "sortPriceAsc": "Ucuzdan bahaya",
+    "sortPriceDesc": "Bahadan ucuza",
+    "all": "Hamısı",
+    "whyTitle": "Bu analiz nə üçündür",
+    "sample": "Hansı material lazımdır",
+    "method": "Metod",
+    "whatIncluded": "Nə daxildir / genlər",
+    "disclaimer": "Saytdakı məlumat tanışlıq xarakteri daşıyır və həkim məsləhətini əvəz etmir. Nəticəni həmişə mütəxəssislə müzakirə edin.",
+    "askCta": "Bu analiz haqqında soruş",
+    "related": "Oxşar analizlər"
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "subtitle": "Analizlər, qeydiyyat və ya materiala hazırlıq barədə sual verin.",
+    "formHint": "Sizə cavab verəcəyik. Hazırda forma lokal stub-dur — backend sonra qoşulacaq.",
+    "name": "Adınız",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "submit": "Göndər",
+    "successTitle": "Təşəkkürlər!",
+    "successText": "Mesajınızı aldıq və tezliklə cavab verəcəyik.",
+    "prefillAnalysis": "Salam! Bu analiz haqqında ətraflı məlumat istəyirəm: {{name}}"
+  },
+  "doctors": {
+    "title": "Həkimlər üçün",
+    "description": "GENESIS LAB klinisist tərəfdaşıdır: yerli NGS, panel seçimində dəstək və ACMG/AMP uyğun hesabatlar.",
+    "points": {
+      "0": "Mürəkkəb halların interpretasiyasında dəstək",
+      "1": "Bakı laboratoriyası və FastSeq 300 sayəsində sürətli müddət",
+      "2": "Beynəlxalq meyarlara uyğun variant təsnifatı"
     },
-    "tests": {
-      "title": "Təklif Etdiyimiz Testlər",
-      "description": "GENESIS LAB geniş spektrli genetik testlər təklif edir:",
-      "list": {
-        "diagnostic_panels": "Diaqnostika panellər",
-        "preimplantation": "Preimplantasiya genetik testlər",
-        "screening": "Skrininq testlər",
-        "nipt": "Qeyri-invaziv prenatal testər NİPT",
-        "exome": "Ekzom testlər",
-        "mitochondrial": "Mitoxondrial DNT testlər",
-        "hla": "HLA analizi",
-        "custom_panels": "Xüsusi dizaynlı panellər"
-      },
-      "nipt": {
-        "title": "NİPT Testləri",
-        "description": "Qeyri-invaziv prenatal testlər (NİPT) - hamilə qadınların qanından uşağın genetik vəziyyətini müəyyən etmək üçün müasir metod:",
-        "packages": {
-          "basic1": {
-            "title": "NİPT Əsas 1",
-            "description": "Trisomiya 21 və cinsiyyətin təyini. (Əkiz hamiləliklər üçün uyğundur)."
-          },
-          "basic2": {
-            "title": "NİPT Əsas 2",
-            "description": "Ən çox rast gəlinən trisomiyalar (21, 18, 13) və cinsiyyətin təyini. (Əkiz hamiləliklər üçün uyğundur)."
-          },
-          "standard": {
-            "title": "NİPT Standart",
-            "description": "Trisomiyalar + 6 cinsi xromosom anevloidiyası + digər 19 otozomal anevloidiya."
-          },
-          "plus": {
-            "title": "NİPT Plus",
-            "description": "Standart paket + 60 mikrodelesiya və duplikasiya sindromu."
-          },
-          "pro": {
-            "title": "NİPT Pro",
-            "description": "Maksimal nəzarət! Standart paket + 90 mikrodelesiya (DiGeorge sindromu daxil olmaqla)."
-          }
-        }
-      }
-    },
-    "technical": {
-      "title": "Texniki Üstünlüklər və Standartlar",
-      "table": {
-        "feature": {
-          "fastseq": "FastSeq 300 Sekvensiyası",
-          "cnv": "CNV Analizi",
-          "mtdna": "WES daxilində mtDNT",
-          "intronic": "Deep Intronic Variants"
-        },
-        "advantage": {
-          "fastseq": "Yüksək əhatə dairəsi (Coverage)",
-          "cnv": "Genlərin surət sayı variantlarının təyini",
-          "mtdna": "Mitoxondrial genomun 5% heteroplazmiya ilə analizi",
-          "intronic": "Dərin intron sahələrinin analizi"
-        },
-        "clinical": {
-          "fastseq": "Mozaisizmin və şişin nadir klonlarının aşkarlanması",
-          "cnv": "Adi PZR-in qaçırdığı böyük delesiya və duplikasiyaların axtarışı",
-          "mtdna": "Multisistem mitoxondrial patologiyaların diaqnostikası",
-          "intronic": "Splaysinqi pozan gizli mutasiyaların aşkarlanması"
-        }
-      }
-    }
+    "catalogCta": "Analiz kataloqu",
+    "contactCta": "Əlaqə",
+    "tagline": "Dəqiq kod — düzgün qərar."
+  },
+  "account": {
+    "title": "Şəxsi kabinet",
+    "subtitle": "Hazırlanır: burada nəticələr, sifarişlər və qeydiyyatlar olacaq.",
+    "comingSoon": "Tezliklə",
+    "featureResults": "Analiz nəticələrinə baxış",
+    "featureOrders": "Sifariş tarixçəsi",
+    "featureAppointments": "Material verməyə qeydiyyat",
+    "contactCta": "Hələlik bizə yazın"
   },
   "partnership": {
-    "title": "Həkimlərlə Tərəfdaşlıq",
-    "description": "GENESIS LAB sadəcə bir laboratoriya deyil, sizin intellektual tərəfdaşınızdır. Biz təklif edirik:",
-    "points": [
-      "Mürəkkəb klinik halların interpretasiyasında konsultativ kömək",
-      "Sürətli nəticə: Yerli bazamız və FastSeq 300-ün gücü sayəsində gözləmə müddəti minimuma enir",
-      "Beynəlxalq Standartlar: Variantların ACMG/AMP kriteriyalarına uyğun tam təsnifatı"
-    ],
-    "tagline": "GENESIS LAB: Dəqiq kod — doğru qərar.",
-    "location": "Bakı, Azərbaycan 🇦🇿"
+    "title": "Həkimlərlə tərəfdaşlıq",
+    "description": "GENESIS LAB sadəcə laboratoriya deyil — intellektual tərəfdaşınızdır.",
+    "tagline": "GENESIS LAB: Dəqiq kod — düzgün qərar.",
+    "location": "Bakı, Azərbaycan"
   },
   "footer": {
     "rights": "Bütün hüquqlar qorunur",
@@ -165,8 +145,7 @@
       "sunday": "Bazar",
       "sunday_hours": "Bağlıdır"
     },
-    "description": "Yüksək məhsuldarlıqlı Yeni Nəsil Sekvensiya (NGS) texnologiyası üzrə ixtisaslaşmış müasir laboratoriya kompleksi.",
-    "tagline": "Dəqiq kod — doğru qərar"
+    "description": "Bakıda genetik laboratoriya: pasiyentlər üçün anlaşılan kataloq və həkimlər üçün dəstək.",
+    "tagline": "Dəqiq kod — düzgün qərar"
   }
 }
-

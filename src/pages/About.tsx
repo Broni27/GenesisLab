@@ -6,8 +6,7 @@ import {
   MapPin, 
   Users, 
   Shield, 
-  FileText,
-  CheckCircle2
+  FileText
 } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -67,7 +66,7 @@ const About = () => {
   };
 
   return (
-    <div className="page-container pt-32 relative overflow-hidden">
+    <div className="page-container pt-24 sm:pt-28 pb-24 md:pb-12 relative overflow-hidden">
       <SEO 
         title={t('about.title')}
         description={t('home.description')}
