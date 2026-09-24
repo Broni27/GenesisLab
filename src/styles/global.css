@@ -97,21 +97,29 @@
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20;
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply px-5 sm:px-6 py-3 rounded-xl font-medium transition-all duration-300;
     @apply bg-lab-primary text-white hover:bg-lab-primary/90;
-    @apply transform hover:scale-105 active:scale-95;
-    @apply shadow-lg hover:shadow-xl;
+    @apply active:scale-[0.98] sm:hover:scale-[1.02];
+    @apply shadow-md hover:shadow-lg;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply px-5 sm:px-6 py-3 rounded-xl font-medium transition-all duration-300;
     @apply border-2 border-lab-primary text-lab-primary;
     @apply hover:bg-lab-primary hover:text-white;
-    @apply transform hover:scale-105 active:scale-95;
+    @apply active:scale-[0.98] sm:hover:scale-[1.02];
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 
   .card {

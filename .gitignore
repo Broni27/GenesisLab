@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Price lists (internal columns, kept locally for catalog rebuild)
+*.xlsx
+*.xls
+scripts/source/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

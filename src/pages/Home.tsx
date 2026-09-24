@@ -1,15 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Microscope, Zap, MapPin, Users, FileText } from 'lucide-react';
+import { ArrowRight, Microscope, Zap, MapPin, Search } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import SEO from '@/components/SEO';
+import CategoryCard from '@/components/analyses/CategoryCard';
+import { getFeaturedCategories } from '@/api/analyses';
 import logoDark from '@/imgs/png/Logo_for_dark_theme(Labor_Group).png';
 import logoLight from '@/imgs/png/Logo_for_light_theme_(Labor_Group).png';
 
 const Home = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
+  const featured = getFeaturedCategories().slice(0, 6);
 
   const features = [
     {
@@ -29,154 +32,125 @@ const Home = () => {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
-
   return (
-    <div className="page-container relative overflow-hidden">
-      <SEO 
+    <div className="page-container relative overflow-hidden pb-20 md:pb-0">
+      <SEO
         title={t('home.title')}
         description={t('home.description')}
         keywords={t('home.seo.keywords')}
       />
-      
-      {/* Grid Pattern Background */}
+
       <div className="absolute inset-0 grid-pattern dark:grid-pattern-dark opacity-30 pointer-events-none" />
 
-      {/* Hero Section */}
-      <section className="section-container pt-32 pb-20 relative">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto"
-        >
+      {/* Hero — brand first, one CTA group */}
+      <section className="relative px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-10 sm:pb-16">
+        <div className="max-w-7xl mx-auto">
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="inline-flex items-center justify-center mb-8 bg-transparent"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto"
           >
-            <div className="bg-transparent">
-              <img 
-                src={theme === 'dark' ? logoDark : logoLight}
-                alt="GENESIS LAB"
-                className="h-32 sm:h-40 md:h-48 w-auto"
-                style={{ 
-                  background: 'transparent',
-                  imageRendering: 'auto',
-                  mixBlendMode: 'normal',
-                  backgroundColor: 'transparent'
-                }}
-              />
+            <img
+              src={theme === 'dark' ? logoDark : logoLight}
+              alt="GENESIS LAB"
+              className="h-24 sm:h-36 md:h-44 w-auto mx-auto mb-6 sm:mb-8"
+            />
+            <p className="text-lg sm:text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4">
+              {t('home.subtitle')}
+            </p>
+            <p className="text-sm sm:text-lg text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 leading-relaxed px-1">
+              {t('home.description')}
+            </p>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+              <Link to="/analyses" className="btn-primary inline-flex items-center justify-center gap-2 min-h-[48px]">
+                <Search className="w-5 h-5" />
+                <span>{t('home.ctaAnalyses')}</span>
+              </Link>
+              <Link to="/contact" className="btn-secondary inline-flex items-center justify-center gap-2 min-h-[48px]">
+                <span>{t('home.ctaContact')}</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </motion.div>
-          
-          <p className="text-xl sm:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
-            {t('home.subtitle')}
-          </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-            {t('home.description')}
-          </p>
-          
-          <Link to="/about">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary inline-flex items-center space-x-2"
-            >
-              <span>{t('home.cta')}</span>
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
-          </Link>
-        </motion.div>
+        </div>
       </section>
 
-      {/* Features Section */}
-      <section className="section-container">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+      {/* Featured categories for patients */}
+      <section className="section-container !py-8 sm:!py-12 relative">
+        <div className="flex items-end justify-between gap-4 mb-5">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+              {t('home.categoriesTitle')}
+            </h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{t('home.categoriesSubtitle')}</p>
+          </div>
+          <Link to="/analyses" className="hidden sm:inline-flex text-sm font-medium text-lab-primary items-center gap-1">
+            {t('home.seeAll')}
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+        <div className="flex gap-3 overflow-x-auto snap-x pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 md:hidden scrollbar-hide">
+          {featured.map((c) => (
+            <div key={c.id} className="min-w-[260px] snap-start">
+              <CategoryCard category={c} />
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featured.map((c) => (
+            <CategoryCard key={c.id} category={c} />
+          ))}
+        </div>
+        <Link
+          to="/analyses"
+          className="sm:hidden mt-4 btn-secondary w-full inline-flex items-center justify-center gap-2 min-h-[48px]"
         >
+          {t('home.seeAll')}
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+      </section>
+
+      <section className="section-container !py-8 sm:!py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
-              whileHover={{ scale: 1.03, y: -5 }}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
               className="card-tech"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-lab-primary to-lab-secondary text-white mb-4">
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-gradient-to-br from-lab-primary to-lab-secondary text-white mb-3">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
+              <h3 className="text-base font-semibold mb-2 text-gray-900 dark:text-white">
                 {t(feature.titleKey)}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-4">
                 {t(feature.descriptionKey)}
               </p>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-container">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          whileHover={{ 
-            scale: 1.02, 
-            y: -5,
-            boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-          }}
-          viewport={{ once: true }}
-          transition={{ 
-            opacity: { duration: 0.5 },
-            scale: { duration: 0.2, ease: "easeOut" },
-            y: { duration: 0.2, ease: "easeOut" },
-            boxShadow: { duration: 0.2, ease: "easeOut" }
-          }}
-          className="card p-12 text-center bg-gradient-to-br from-lab-primary/10 to-lab-secondary/10 dark:from-lab-primary/20 dark:to-lab-secondary/20 border-lab-primary/30"
-        >
-          <h2 className="heading-3 mb-4 text-gray-900 dark:text-white">
-            {t('partnership.tagline')}
+      <section className="section-container !py-8 sm:!py-14">
+        <div className="rounded-2xl p-6 sm:p-10 text-center bg-gradient-to-br from-lab-primary/10 to-lab-accent/40 dark:from-lab-primary/20 dark:to-lab-secondary/20 border border-lab-primary/20">
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+            {t('home.helpTitle')}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            {t('partnership.description')}
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-5 max-w-xl mx-auto">
+            {t('home.helpText')}
           </p>
-          <Link to="/partnership">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary"
-            >
-              {t('nav.partnership')}
-            </motion.button>
+          <Link to="/contact" className="btn-primary inline-flex min-h-[48px] items-center">
+            {t('home.ctaContact')}
           </Link>
-        </motion.div>
+        </div>
       </section>
     </div>
   );
 };
 
 export default Home;
-

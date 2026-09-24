@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Heart } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import logoDark from '@/imgs/png/Just_logo_(dark_theme).png';
 import logoLight from '@/imgs/png/Just_logo(white_theme).png';
@@ -10,15 +11,16 @@ const Footer = () => {
   const { theme } = useTheme();
 
   return (
-    <footer className="bg-gray-950 text-white py-12 border-t border-gray-800">
+    <footer className="bg-gray-950 text-white py-12 border-t border-gray-800 mb-16 md:mb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="sm:col-span-2 lg:col-span-1"
           >
             <div className="flex items-center space-x-3 mb-4">
               <div className="bg-transparent">
@@ -44,6 +46,21 @@ const Footer = () => {
             <p className="text-sm text-gray-400 leading-relaxed">
               {t('footer.description')}
             </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+          >
+            <h4 className="text-lg font-semibold mb-4 text-lab-primary">{t('nav.analyses')}</h4>
+            <div className="space-y-2 text-sm">
+              <Link to="/analyses" className="block text-gray-400 hover:text-white transition-colors">{t('nav.analyses')}</Link>
+              <Link to="/about" className="block text-gray-400 hover:text-white transition-colors">{t('nav.about')}</Link>
+              <Link to="/doctors" className="block text-gray-400 hover:text-white transition-colors">{t('nav.doctors')}</Link>
+              <Link to="/contact" className="block text-gray-400 hover:text-white transition-colors">{t('nav.contact')}</Link>
+            </div>
           </motion.div>
 
           {/* Contact Info */}
